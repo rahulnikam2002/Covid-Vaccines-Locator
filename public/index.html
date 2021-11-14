@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get the complete details of Covid Vaccines Places near by of your area, Get the pricing, Exact Location, Timings">
+    <meta name="keywords" content="Covid Vaccines Locator, Corona Vaccines near by, covid vaccines locator by pin code">
+    <meta name="author" content="Rahul Rajesh Nikam">
+    <meta name="google-site-verification" content="6ZMJr6MOZoYxMx6DN_z0CLdFKcvNKHhuUBjAh5Zr-50" />
+    <link rel="canonical" href="https://vaccinesnearme.web.app/" />
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Covid Vaccines Locator" />
+    <meta property="og:description"
+        content="Get the complete details of Covid Vaccines Places near by of your area, Get the pricing, Exact Location, Timings" />
+    <meta property="og:image" content="/images/favicon/vaccine.png" />
+    <meta property="og:url" content="https://vaccinesnearme.web.app/" />
+    <title>Covid Vaccines Locator - Get Price, Timing, Address</title>
+
+    <!-- CSS Linking -->
+    <link rel="shortcut icon" href="/images/favicon/vaccine.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
+    <!--  -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LBC8JFWEJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6LBC8JFWEJ');
+    </script>
+    <!--  -->
+</head>
+
+<body>
+    <div class="mainBody">
+        <!-- Upper/Top area -->
+        <div class="upperArea searchArea">
+            <h1><span><img src="/images/favicon/vaccine.png" alt=""></span> Vaccines Near Me</h1>
+        </div>
+
+        <!-- Search Functionality Area -->
+        <div class="searchingArea">
+            <div class="inputs">
+                <input type="number" placeholder="Enter Pin Code" id="usersPincode">
+                <input type="date" placeholder="Enter a date" class="datePicker" id="datePicker">
+                <input type="button" value="Search" class="submit" id="submit">
+            </div>
+        </div>
+
+        <!-- lower area for sowing vaccine results -->
+        <div class="lowerArea resultArea">
+            <div class="userWelcome-resultFetchDetails">
+                <h3>Hey👋</h3>
+                <p id="resultDataFetched">Enter Pincode and Date to check Covid Vaccines</p>
+
+            </div>
+            <div class="allPostCards" id="allPostCards">
+             </div>  
+
+
+            <div class="copyrights">
+                <h1 id="copyRightText">Made by <span id="developerName">Team FSRS</span></h1>
+            </div>
+        </div>
+        <script src="/src/js/app.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found</title>
+  <link rel="stylesheet" href="/src/css/responsive.css">
+
+  <style media="screen">
+    @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button {
+      background-color: #5677fa;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      border-radius: 6px;
+      padding: 7px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    body {
+      height: 95vh;
+      width: 99%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #message {
+      width: 25%;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.20) 0px 4px 12px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 26px;
+      
+    }
+
+    #message h2 {
+      font-size: 19px;
+      font-weight: 500;
+    }
+
+    /* Responsive CSS */
+    @media (min-width: 0px) and (max-width: 616px) {
+      #message {
+        width: 80%;
+        font-size: 19px;
+        font-weight: 500;
+      }
+    }
+
+    @media (min-width: 616px) and (max-width: 768px) {
+      #message {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1440px) {
+      #message {
+        width: 40%;
+        font-size: 19px;
+        font-weight: 500;
+      }
+    }
+
+    /*  */
+  </style>
+</head>
+
+<body>
+  <div id="message">
+    <div class="messageHeading">
+      <h2>404, Page Not Found😞</h2>
+    </div>
+    <div class="mainPageDirection">
+      <button id="homeBtn">Go to main page</button>
+    </div>
+  </div>
+</body>
+<script>
+  let homeBtn = document.getElementById('homeBtn');
+  homeBtn.addEventListener('click', () => {
+    location.href = '/';
+  })
+</script>
+
+</html>

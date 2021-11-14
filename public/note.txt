@@ -1,0 +1,31 @@
+{
+    "sessions":
+        {
+        "center_id": 715853,
+        "name": "PCMC Pritam Childrens Hospital",
+        "address": "Nashik - Pune Hwy APTE Colony Bhosari Pimpri-Chinchwad Maharashtra 411039",
+        "state_name": "Maharashtra",
+        "district_name": "Pune",
+        "block_name": "Haveli",
+        "pincode": 411039,
+        "from": "09:00:00",
+        "to": "21:30:00",
+        "lat": 18,
+        "long": 73,
+        "fee_type": "Paid",
+        "session_id": "c5671e5e-bd8b-4ba6-a202-773d6e81a05a",
+        "date": "19-08-2021",
+        "available_capacity": 186,
+        "available_capacity_dose1": 95,
+        "available_capacity_dose2": 91,
+        "fee": "1410",
+        "min_age_limit": 18,
+        "allow_all_age": true,
+        "vaccine": "COVAXIN",
+        "slots": [
+        "09:00AM-12:00PM",
+        "12:00PM-03:00PM",
+        "03:00PM-06:00PM",
+        "06:00PM-09:30PM"
+    }
+}

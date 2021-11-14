@@ -1,0 +1,65 @@
+@media (min-width: 0px) and (max-width: 616px) {
+    .allPostCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+    #message {
+        width: 80%;
+    }
+}
+
+@media (min-width: 616px) and (max-width: 768px) {
+    #message {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    .allPostCards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+    .searchingArea .inputs {
+        background-color: var(--white);
+        width: 39%;
+    }
+    .vaccineDetail {
+        padding: 5px 24px;
+    }
+    #message {
+        width: 40%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    .vaccineDetail {
+        padding: 5px 18px;
+    }
+    .vaccinePriceBox {
+        position: relative;
+        left: 20px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 375px) {
+    .vaccinePriceBox {
+        position: relative;
+        left: 18px;
+    }
+}
+
+@media (min-width: 617px) and (max-width: 934px) {
+    .allPostCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+}

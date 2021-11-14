@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    height: 100vh;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a, button, div, h1, h2, h3 {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --white: #ffffff;
+    --dark: #222b45;
+    --primary: #5677fa;
+    --secondary: #4a6aee;
+}
+
+.upperArea {
+    height: 35vh;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.upperArea h1 {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 14px 10px 10px 10px;
+}
+
+.upperArea img {
+    width: 24px;
+    position: relative;
+    top: 0px;
+}
+
+.searchingArea {
+    position: relative;
+    bottom: 90px;
+}
+
+.searchingArea .inputs {
+    background-color: var(--white);
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 12px 8px;
+    border-radius: 10px;
+}
+
+/*  */
+
+.datePicker {
+    background-color: white;
+}
+
+input[type='date']:before {
+    content: attr(placeholder);
+    position: relative;
+    color: gray;
+    left: 0px;
+    margin-right: 10px;
+    ;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*  */
+
+.searchingArea .inputs input {
+    width: 90%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 9px 10px;
+    margin: 5px 0px;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: none;
+}
+
+.searchingArea .inputs .submit {
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+}
+
+/*  */
+
+.lowerArea {
+    position: relative;
+    bottom: 70px;
+    max-width: 90%;
+    margin: auto;
+    height: 47vh;
+}
+
+.userWelcome-resultFetchDetails {
+    margin: 10px 0px;
+}
+
+.userWelcome-resultFetchDetails h3 {
+    font-weight: 600;
+}
+
+.userWelcome-resultFetchDetails p {
+    font-size: 14px;
+}
+
+.singlepostCard {
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(99, 99, 99, 0.08) 0px 2px 8px 0px;
+    padding: 10px 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.name-add {
+    width: 80%;
+}
+
+.placeName p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.placeProperAddress p {
+    font-size: 12px;
+}
+
+.name-add-pricing {
+    display: flex;
+    /* align-items: ; */
+}
+
+.vaccinePriceBox {
+    background-color: var(--secondary);
+    font-size: 13px;
+    color: var(--white);
+    padding: 5px 7px;
+    border-radius: 6px;
+}
+
+.vaccinationTimeDate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0px 10px 0px;
+}
+
+.vaccinationDateTimeBox {
+    /* background-color: var(--primary); */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.vaccinationTextONSection hr {
+    width: 30px;
+    margin: 0px 2px;
+}
+
+.vaccinationTextONSection {
+    display: flex;
+    align-items: center;
+}
+
+.vaccinationTime span {
+    margin: 0px 7px;
+    position: relative;
+    top: 1px;
+}
+
+/*  */
+
+.vaccinePriceSpan {
+    margin: 0px 2px;
+}
+
+.vaccineDetailsArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px !important;
+}
+
+.vaccineDetailsHeading {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.vaccineDetail p:last-child {
+    font-size: 11px;
+    text-align: center;
+}
+
+.vaccineDetail {
+    /* box-shadow: rgba(100, 100, 111, 0.10) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 6px !important;
+}
+
+/*  */
+
+.allPostCards {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+.singlepostCard {
+    margin-bottom: 20px;
+}
+
+.copyrights {
+    width: 100%;
+}
+
+.copyrights h1 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 14px;
+    /* position: absolute; */
+    margin-bottom: 10px;
+    /* bottom: 10px; */
+}
+
+#developerName {
+    text-decoration: underline;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+/* loader Functionality */
+
+.loader {
+    display: none;
+}
